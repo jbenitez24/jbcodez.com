@@ -1,0 +1,153 @@
+/**** FONTS USED IN THIS PAGE ******
+font-family: 'Dosis', sans-serif; Regular 400 and bold 700
+font-family: 'Permanent Marker', cursive; Regular 400
+font-family: 'Roboto', sans-serif; Regular 400
+*/
+body {
+    background-image: url('../img/purple-cloud.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+}
+
+/***** GRID FOR THE PAGE *****/
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1400px;
+}
+.half-width {
+    float: left;
+    width: 700px;
+}
+.third-width {
+    float: left;
+    height: 200px;
+    width: 465px;
+}
+
+/***** HEADER SECTION *****/
+header {
+    height: 800px;
+}
+header .full-width{
+    margin: 0;
+    width: auto;
+}
+header p {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 100px;
+    width: auto;
+}
+header h1 {
+    clear: both;
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    padding-top: 400px; 
+    text-transform: capitalize;
+    margin-left: 200px;
+}
+header h1 span {
+    color: #CF0078;
+}
+header h1 span:hover {
+    font-family: 'Permanent Marker', cursive;
+}
+.nav {
+    float: right;
+    width: auto;
+}
+nav ul {
+    margin: 0;
+    padding-top: 27px;
+
+}
+nav ul li {
+    display: inline;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 35px 40px 0 40px;
+    text-transform: uppercase;
+}
+nav ul li :hover{
+    color: #CF0078;
+}
+nav ul li a {
+    color: #FFFFFF;    
+    text-decoration: none;
+
+}
+
+/***** PORTFOLIO SECTION *****/
+.block {
+    box-sizing: border-box;
+    height: 400px;
+    margin: 50px;
+    width: 600px;
+}
+#portfolio {
+    background-color: #3F0B66;
+    clear: both;
+    font-size: 28px;
+}
+#portfolio h2 {
+    text-align: center;
+}
+#portfolio .image{
+    height: 400px; 
+    width: 600px;
+    float: right;
+}
+
+/***** ABOUT SECTION *****/
+#about {
+    font-size: 28px;
+    text-align: center;
+}
+#about p {
+    text-align: left;
+}
+#about .image {
+    height: 500px;
+}
+
+/***** FOOTER SECTION *****/
+footer .full-width {
+    text-align: center;
+}
+footer {
+    background-color: #3F0B66;
+    font-size: 28px;
+    height: 450px;
+}
+i{
+    color: #FFFFFF;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+i:hover {
+    color: #CF0078;
+}
+
+#copy {
+    clear: both;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 70px;
+}
+footer p a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer p a:hover {
+    color: #CF0078;
+}
+footer p strong {
+    color: #CF0078;
+}
