@@ -23,7 +23,6 @@ body {
     flex-flow: row wrap;
 }
 .half-width {
-    /* float: left; */
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -31,18 +30,18 @@ body {
     width: 90%;
 }
 .third-width {
-    /* float: left; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     height: 200px;
-    width: 30%;
+    width: 90%;
 }
 
 /***** HEADER SECTION *****/
 header {
     height: 800px;
+   
 }
 header .full-width{
     margin: 0;
@@ -57,19 +56,20 @@ header .half-width p {
     align-items: center;
     flex-flow: row wrap;
     width: 90%;
+
 }
 header p {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
     font-weight: normal;
     margin-left: 100px;
     width: auto;
 }
 header h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 72px;
+    font-size: 4.5em;
     font-weight: normal;
-    padding-top: 250px; 
+    padding-top: 200px; 
     text-transform: capitalize;
     margin-left: 65px;
 }
@@ -80,9 +80,9 @@ header h1 span:hover {
     font-family: 'Permanent Marker', cursive;
 }
 .nav {
-    /* float: right; */
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 nav ul {
     margin: 0;
@@ -91,8 +91,9 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.875em;
     font-weight: normal;
     padding: 35px 40px 0 40px;
     text-transform: uppercase;
@@ -107,34 +108,45 @@ nav ul li a {
 }
 
 /***** PORTFOLIO SECTION *****/
+#portfolio .content-wrapper {
+    padding-bottom: 50px;
+}
 .block {
     box-sizing: border-box;
-    height: 400px;
+    height: 450px;
     margin: 50px;
-    width: 600px;
+    width: 700px;
 }
 #portfolio {
     background-color: #3F0B66;
-    /* clear: both; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
 
-    font-size: 28px;
+    font-size: 2em;
 }
 #portfolio h2 {
     text-align: center;
 }
 #portfolio .image{
-    height: 400px; 
-    width: 600px;
-    /* float: right; */
+    height: 450px; 
+    width: 700px;
+}
+.block-2 {
+    display: none;
+}
+.block-3 {
+    display: none;
+}
+.block-6 {
+    display: none;
 }
 
 /***** ABOUT SECTION *****/
 #about {
-    font-size: 28px;
+    font-size: 2em;
+    line-height: 2em;
     text-align: center;
 }
 #about p {
@@ -157,7 +169,8 @@ footer .full-width {
 }
 footer {
     background-color: #3F0B66;
-    font-size: 28px;
+    font-size: 2em;
+    line-height: 1em;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -181,8 +194,7 @@ i:hover {
 }
 
 #copy {
-    /* clear: both; */
-    font-size: 18px;
+    font-size: 1.125em;
     margin: 0;
     padding-top: 70px;
     padding-bottom: 50px;
@@ -196,4 +208,7 @@ footer p a:hover {
 }
 footer p strong {
     color: #CF0078;
+}
+@media (min-width: 768px) {
+
 }
