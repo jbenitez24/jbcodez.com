@@ -244,18 +244,19 @@ header h1 {
 }
 /*Portfolio Section*/
 .block {
-    width: 600px;
-    height: 400px;
+    height: 300px;
+    margin: 30px;
+    width: 400px;
 }
 .block-2, .block-3, .block-6 {
     display: flex;
 }
 #portfolio .image{
-    height: 400px; 
-    width: 600px;
+    height: 300px; 
+    width: 400px;
 }
 #portfolio {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /*Footer Section*/
@@ -273,4 +274,18 @@ footer {
 #copy {
     font-size: .875em;
 }
+}
+@media only screen and (min-width: 1534px) {
+#portfolio {
+    font-size: 1.5rem;
+    }
+.block {
+    width: 600px;
+    height: 400px;
+    }    
+
+#portfolio .image{
+    height: 400px; 
+    width: 600px;
+    }
 }
