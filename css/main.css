@@ -55,15 +55,17 @@ header .half-width p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 90%;
+    width: 100%;
 
 }
 header p {
     font-family: 'Dosis', sans-serif;
     font-size: 4.5em;
     font-weight: normal;
-    margin-left: 100px;
-    width: auto;
+    /* margin-left: 100px; */
+    width: 100%;
+    margin: 0;
+
 }
 header h1 {
     font-family: 'Roboto', sans-serif;
@@ -79,6 +81,10 @@ header h1 span {
 header h1 span:hover {
     font-family: 'Permanent Marker', cursive;
 }
+.logo{
+    width: 100%;
+    
+}
 .nav {
     display: flex;
     justify-content: center;
@@ -87,6 +93,7 @@ header h1 span:hover {
 nav ul {
     margin: 0;
     padding-top: 27px;
+    padding-left: 0;
 
 }
 nav ul li {
@@ -133,13 +140,7 @@ nav ul li a {
     height: 450px; 
     width: 700px;
 }
-.block-2 {
-    display: none;
-}
-.block-3 {
-    display: none;
-}
-.block-6 {
+.block-2, .block-3, .block-6 {
     display: none;
 }
 
@@ -209,6 +210,67 @@ footer p a:hover {
 footer p strong {
     color: #CF0078;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+/*Header section*/
 
+/*Footer Section*/
+footer .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+.contact-block, .social-block, .location-block {
+    width: 33%;
+}
+.third-width p {
+    margin: 0;
+}
+}
+@media only screen and (min-width: 1028px) {
+/*Header Section*/
+.logo {
+    width: 31%;
+}
+.logo p {
+    font-size: 3.5rem;
+}
+header h1 {
+    padding-top: 300px;
+}
+.nav {
+    width: 34%;
+}
+.nav ul li {
+    font-size: 1.55em;
+}
+/*Portfolio Section*/
+.block {
+    width: 600px;
+    height: 400px;
+}
+.block-2, .block-3, .block-6 {
+    display: flex;
+}
+#portfolio .image{
+    height: 400px; 
+    width: 600px;
+}
+#portfolio {
+    font-size: 1.5rem;
+}
+
+/*Footer Section*/
+#about {
+    font-size: 1.5em;
+}
+.about-content {
+    width: 40%;
+}
+/*Footer Section*/
+footer {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+#copy {
+    font-size: .875em;
+}
 }
